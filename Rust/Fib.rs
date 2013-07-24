@@ -9,7 +9,9 @@ fn rFib(n: int) -> int {
 fn fib(n: int) -> int {
 
 	fn doNormalCase(n: int) -> int {
-		let mut prev = 1, prevPrev = 0, i = 2;
+		let mut prev = 1;
+		let mut prevPrev = 0;
+		let mut i = 2;
 
 		while i != n+1 {
 			let tmp = prev + prevPrev;
@@ -31,5 +33,5 @@ fn fib(n: int) -> int {
 fn main() {
 	//let n = rFib(7);
 	let n = fib(7);
-	io::println(fmt!("%d", n));
+	println(fmt!("%d", n));
 }
